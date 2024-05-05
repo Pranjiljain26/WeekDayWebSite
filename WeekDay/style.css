@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#cardContainer{
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: auto;
+}
+/* responsive ness of the columns */
+@media screen and (max-width:1000px) {
+    #cardContainer{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:600px) {
+    #cardContainer{
+        grid-template-columns: auto;
+    }
+}
+.card{
+    border: solid 1px gray;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+
+}
+/* the logo and basic info section */
+#cardContainer .card .box1 .box1-inner{
+    padding: 10px;
+}
+#cardContainer .card .box1 img{
+    height: 50px;
+    width: 50px;
+}
+.box1{
+    display: flex;
+}
+
+.box-data-const{
+    margin: 30px 0px 10px;
+    height: 70px;
+}
+
+
+/* long text section */
+a{
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(28, 11, 212);
+}
+.longText {
+    position: relative;
+  }
+  
+  .longText.expanded {
+    z-index: 1; /* Ensure the expanded long text appears above other elements */
+    background-color: white; /* Optional: Add background color to ensure text readability */
+  }
+  
+/* apply buttion */
+.apply-button{
+    border: none;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color:rgb(85, 239, 196);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.referral-button{
+    border: none;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(39, 12, 240);
+    color: white;
+}
+
+/*  modal container */
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
