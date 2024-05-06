@@ -65,7 +65,6 @@ function fetchData() {
 
       offset += limit; // Update offset for the next fetch
 
-      // Add event listeners for "Read more" links
       const readMoreLinks = document.querySelectorAll(".read-more");
       readMoreLinks.forEach((readMoreLink) => {
         readMoreLink.addEventListener("click", function (event) {
