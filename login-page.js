@@ -4,7 +4,7 @@ function validateForm() {
 
   // Hardcoded credentials (for demo purposes only)
   var validUsername = "pranjil";
-  var validPassword = "pranjil@123";
+  var validPassword = "pranjil";
 
   if (username.trim() == "") {
     alert("Please enter your username.");
